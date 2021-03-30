@@ -13,16 +13,12 @@ body, html {
 }
 
 body {
-    background-image: url('images/background.jpeg');
+    background-image: url('images/background.png');
     background-size: cover;
 }
 
-.background-cover {
-    background-color: rgba(0, 0, 0, 0.8);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
+a {
+    text-decoration: none;
 }
 
 .main-content {
@@ -48,7 +44,6 @@ body {
 .logo {
     display: flex;
     color: #fff;
-    text-decoration: none;
     transition: .10s;
 }
 
@@ -84,6 +79,17 @@ body {
     font-size: 18px;
 }
 
+.contact-info a {
+    display: flex;
+    color: #fff;
+    margin: 5px;
+    transition: .10s ease;
+}
+
+.contact-info a:hover {
+    color: #F16521;
+}
+
 .card-container {
     display: flex;
     justify-content: space-between;
@@ -107,6 +113,10 @@ body {
 .folder:hover .shop {
     visibility: visible;
     opacity: 1;
+}
+
+.folder:hover .folder-text {
+    color: #F16521;
 }
 
 .folder p {
@@ -136,24 +146,33 @@ body {
     opacity: 0;
 }
 
+.shop .details p {
+    font-size: 14px;
+}
+
+.shop .details a {
+    color: #fff;
+}
+
 .shop p {
     cursor: pointer;
 }
 
 .price .small {
+    text-align: left;
     font-size: 10px;
 }
 
 .price .big {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 #card-1 {
     display: flex;
     align-items: flex-end;
     height: 100%;
-    background-image: url('images/img1.jpg');
+    background-image: url('images/img1.png');
     background-size: cover;
     margin-bottom: 20px;
 }
@@ -162,7 +181,7 @@ body {
     display: flex;
     align-items: flex-end;
     height: 100%;
-    background-image: url('images/img2.jpg');
+    background-image: url('images/img2.png');
     background-size: cover;
     margin-bottom: 20px;
 }
@@ -171,25 +190,26 @@ body {
     display: flex;
     align-items: flex-end;
     height: 100%;
-    background-image: url('images/img3.jpg');
+    background-image: url('images/img3.png');
     background-size: cover;
     margin-bottom: 30px;
 }
 
 #card-3 .small {
     font-size: 10px;
+    text-align: left;
 }
 
 #card-3 .big {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 #card-4 {
     display: flex;
     align-items: flex-end;
     height: 100%;
-    background-image: url('images/img4.jpg');
+    background-image: url('images/img4.png');
     background-size: cover;
     margin-bottom: 20px;
 }
@@ -198,7 +218,7 @@ body {
     display: flex;
     align-items: flex-end;
     height: 100%;
-    background-image: url('images/img5.jpg');
+    background-image: url('images/img5.png');
     background-size: cover;
     margin-bottom: 20px;
 }
@@ -207,7 +227,7 @@ body {
     display: flex;
     align-items: flex-end;
     height: 100%;
-    background-image: url('images/img6.jpg');
+    background-image: url('images/img6.png');
     background-size: cover;
     margin-bottom: 20px;
 }
