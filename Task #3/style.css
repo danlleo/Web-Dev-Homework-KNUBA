@@ -108,18 +108,9 @@ body {
   transition: 0.1s ease;
 }
 
-.content-header .logo svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-right: 15px;
-  cursor: pointer;
+.content-header .logo i {
+  font-size: 45px;
+  margin-right: 10px;
 }
 
 .content-header .logo h4 {
@@ -147,6 +138,10 @@ body {
 
 .content-header .logo h4 span {
   font-size: 18px;
+}
+
+.content-header .logo:hover i {
+  color: #f26522;
 }
 
 .content-header .logo:hover h4 {
