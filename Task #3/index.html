@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -13,38 +19,7 @@
         <div class="content-header">
           <a href="#">
             <div class="logo">
-              <svg
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 50 40"
-                width="65"
-                height="65"
-              >
-                <defs>
-                  <image
-                    width="100"
-                    height="100"
-                    id="img1"
-                    href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxMDAgMTI1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxMDAgMTI1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik05NS4zLDQ2LjRsLTEuOS0xMS44bC0xLjksMTEuOGgwdjguM2wtMS43LTEuNHYtNi45aDBsLTEuOS0xMS44bC0xLjksMTEuOGgwdjMuOWwtOC4xLTYuNlYzMy4zaDBsLTEuOS0xMS44CglsLTEuOSwxMS44aDB2Ny4zbC04LjktNy4zVjE5LjloMEw2My42LDguMmwtMS45LDExLjhoMHYxMC40TDYwLDI4Ljl2LTloMEw1OC4yLDguMmwtMS45LDExLjhoMHY2bC02LjEtNWwtNi44LDUuNXYtNi41aDBMNDEuNiw4LjIKCWwtMS45LDExLjhoMHY5LjZsLTEuNywxLjRWMTkuOWgwTDM2LjIsOC4ybC0xLjksMTEuOGgwdjE0TDI1LjYsNDF2LTcuOGgwbC0xLjktMTEuOGwtMS45LDExLjhoMHYxMC44bC03LjYsNi4ydi0zLjloMGwtMS45LTExLjgKCWwtMS45LDExLjhoMHY2LjlsLTEuNywxLjR2LTguM2gwTDcsMzQuNkw1LjEsNDYuNGgwdjExdjE1LjJ2MjBoMTQuNnYtOC4zYzAtMi4yLDEuOC00LDQtNGMyLjIsMCw0LDEuOCw0LDRsMCwwdjguM2gxNC40Vjc2LjhsMCwwCgljMC00LjIsMy40LTcuNiw3LjYtNy42YzQuMiwwLDcuNiwzLjQsNy42LDcuNmgwdjE1LjdoMTQuOXYtOC4zYzAtMi4yLDEuOC00LDQtNGMyLjIsMCw0LDEuOCw0LDR2OC4zaDE1LjF2LTIwVjU3LjRMOTUuMyw0Ni40CglMOTUuMyw0Ni40eiBNMjYuOSw3NC4xaC02LjN2LTYuNmMwLTEuNywxLjQtMy4yLDMuMi0zLjJzMy4yLDEuNCwzLjIsMy4ybDAsMEMyNi45LDY3LjYsMjYuOSw3NC4xLDI2LjksNzQuMXogTTI2LjksNTkuN2gtNi4zdi02LjYKCWMwLTEuNywxLjQtMy4yLDMuMi0zLjJzMy4yLDEuNCwzLjIsMy4ybDAsMEMyNi45LDUzLjEsMjYuOSw1OS43LDI2LjksNTkuN3ogTTM5LDUwLjVoLTUuNXYtNS44YzAtMS41LDEuMS0zLjQsMi44LTQuNwoJYzEuNiwxLjIsMi44LDMuMSwyLjgsNC43QzM5LDQ0LjgsMzksNTAuNSwzOSw1MC41eiBNNTMuNyw2Mi4zaC04VjU0YzAtMi4yLDEuOC00LDQtNGMyLjIsMCw0LDEuOCw0LDRMNTMuNyw2Mi4zTDUzLjcsNjIuM3oKCSBNNTMuNyw0My40aC04di04LjNjMC0yLjIsMS42LTUsNC02LjdjMi40LDEuOCw0LDQuNSw0LDYuN0w1My43LDQzLjRMNTMuNyw0My40eiBNNjYuNCw1MC41aC01LjV2LTUuOGMwLTEuNSwxLjEtMy40LDIuOC00LjcKCWMxLjYsMS4yLDIuOCwzLjEsMi44LDQuN0w2Ni40LDUwLjVMNjYuNCw1MC41eiBNNzkuNCw3NC4xaC02LjN2LTYuNmMwLTEuNywxLjQtMy4yLDMuMi0zLjJzMy4yLDEuNCwzLjIsMy4yCglDNzkuNCw2Ny42LDc5LjQsNzQuMSw3OS40LDc0LjF6IE03OS40LDU5LjdoLTYuM3YtNi42YzAtMS43LDEuNC0zLjIsMy4yLTMuMnMzLjIsMS40LDMuMiwzLjJDNzkuNCw1My4xLDc5LjQsNTkuNyw3OS40LDU5Ljd6Ii8+Cjwvc3ZnPgo="
-                  />
-                </defs>
-                <style>
-                  tspan {
-                    white-space: pre;
-                  }
-                </style>
-                <g id="Milan Holidays">
-                  <g id="Header">
-                    <g id="Logo">
-                      <use
-                        id="logo"
-                        href="#img1"
-                        transform="matrix(0.504,0,0,0.515,0,0)"
-                      />
-                    </g>
-                  </g>
-                </g>
-              </svg>
+              <i class="fab fa-fort-awesome"></i>
               <h4>MILAN <span>HOLIDAYS</span></h4>
             </div>
           </a>
