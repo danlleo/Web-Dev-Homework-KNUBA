@@ -15,6 +15,7 @@ body, html {
 body {
     background-image: url('background.png');
     background-size: cover;
+    display: flex;
 }
 
 header {
@@ -54,12 +55,8 @@ header {
     color: white;
 }
 
-.nav-links i {
-    transition: .10s;
-}
-
-.nav-links i:hover {
-    color: #3CB878;
+.nav-links svg {
+    fill: #3CB878
 }
 
 .split {
